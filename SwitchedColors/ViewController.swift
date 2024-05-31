@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        colorView.layer.cornerRadius = 12
+        
         redIntensity.text = String(format: "%.2f", sliderRed.value)
         greenIntensity.text = String(format: "%.2f", sliderGreen.value)
         blueIntensity.text = String(format: "%.2f", sliderBlue.value)
